@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EquipoDAO {
-    Conexion conectar = new Conexion();
+public class SedeDAO {
+    Conexion conectar=new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;

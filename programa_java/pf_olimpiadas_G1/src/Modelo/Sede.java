@@ -1,19 +1,19 @@
 
-package Modelo;
+package modelo;
 /*==============================================================*/
 /* Table: equipos (Equipamiento)
 idequipo (varchar(3)),
 nomEquipo(varchar(30)), npartes(number(4,0))                                         */
 /*==============================================================*/
 
-public class Equipo {
+public class Sede {
     String idEquipo;
     String nomEquipo;
     float  npartes;
-    public Equipo(){
+    public Sede(){
     
 }
-    public Equipo(String idEquipo, String nomEquipo, float npartes) {
+    public Sede(String idEquipo, String nomEquipo, float npartes) {
         this.idEquipo = idEquipo;
         this.nomEquipo = nomEquipo;
         this.npartes = npartes;
