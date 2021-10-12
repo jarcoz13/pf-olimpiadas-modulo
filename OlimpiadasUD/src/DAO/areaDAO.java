@@ -3,7 +3,7 @@ package DAO;
 
 import java.sql.Connection;
 import Modelo.Conexion;
-import Modelo.unico;
+import Modelo.area;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -16,21 +16,21 @@ public class areaDAO {
     ResultSet rs;
     
     public List Listar(){
-        List <unico>datos =new ArrayList<>();
+        List <area>datos =new ArrayList<>();
         // sentencia sql tabla Equipo
-        String sql="Select * from unico";
+        String sql="Select * from area";
         
         try {
             con=conectar.getConnection();
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
             while (rs.next()) {
-                unico u = new unico();
-                u.setIdunico(rs.getInt(1));
-                u.setIddeporte(rs.getInt(2));
-                u.setIdcomplejo(rs.getInt(3));
-                u.setAreaunico(rs.getInt(4));
-                datos.add(u);
+                area a = new area();
+                a.setIdcomplejo(rs.getInt(1));
+                a.setIdarea(rs.getInt(2));
+                a.setNomarea(rs.getString(3));
+                a.setUbicacion(rs.getString(4));
+                datos.add(a);
                 
             }
         }
@@ -39,10 +39,10 @@ public class areaDAO {
         }
         return datos;
     }
-        public void Guardar (int idunico, int iddeporte, int idcomplejo, int areaunico){
+        public void Guardar (int idcomplejo, int idarea, String nomarea, String ubicacion){
             try {
                 String postgresql = "INSERT INTO unico(iduquipo, iddeporte, idcomplejo, npares) "
-                        + "values('" + idunico + "','" + iddeporte + "' ,'" + idcomplejo +"' ,'" + areaunico+ "')";
+                        + "values('" + idcomplejo + "','" + idarea + "' ,'" + nomarea+"' ,'" +ubicacion+ "')";
 
                 con=conectar.getConnection();
                 ps=con.prepareStatement(postgresql);
