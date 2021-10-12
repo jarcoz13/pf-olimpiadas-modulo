@@ -56,7 +56,7 @@ idcomplejo(char(5)),idunico(varchar(4)),
 nomcomplejo(varchar(30)), 
 presupuesto (number(7,2)), direccion(varchar(30))                                      */
 /*==============================================================*/
-INSERT INTO sede VALUES (  1, 1,'Parque Sapporo Odori',        3000000, 'Chuo-ku,Sapporo,Hokkaido');
+INSERT INTO sede VALUES (  1,  1,   'Parque Sapporo Odori',        3000000, 'Chuo-ku,Sapporo,Hokkaido');
 INSERT INTO sede VALUES (  2,  2,   'Sport Plaza Musashino Forest', 1200000, '290-11, Nishimachi, Chofu-shi');
 INSERT INTO sede VALUES (  3,  3,   'Parque de Tenis de Ariake',    3000000, '2-22, 2chome, Ariake, Koto-ku');
 INSERT INTO sede VALUES (  4,  4,   'Estadio de Béisbol Yokohama',  3000000, 'Chuo-ku,Sapporo,Hokkaido');
@@ -135,26 +135,26 @@ idequipo (varchar(3)), nomEquipo(varchar(30)), npartes(number(4,0))             
 /*==============================================================*/
 
 
-INSERT INTO equipo VALUES (  1, 'Malla de voleboll',  1);
-INSERT INTO equipo VALUES (  2, 'Balon de futbol',   3);
-INSERT INTO equipo VALUES (  3, 'paletas de Ununcios ', 4);
-INSERT INTO equipo VALUES (  4, 'Balon waterpolo', 5);
-INSERT INTO equipo VALUES (  5, 'Play team',    2);
-INSERT INTO equipo VALUES (  6, 'Jump start',   6);
-INSERT INTO equipo VALUES (  7, 'Big Boys',     1);
-INSERT INTO equipo VALUES (  8, 'Magic league', 2);
-INSERT INTO equipo VALUES (  9, 'The special team', 3);
-INSERT INTO equipo VALUES (  10, 'Never give up',4);
-INSERT INTO equipo VALUES (  11, 'The winners', 5);
-INSERT INTO equipo VALUES (  12, 'The fighters', 1);
+INSERT INTO equipo VALUES (  1,  'Malla de voleboll',  1);
+INSERT INTO equipo VALUES (  2,  'Balon de futbol',   3);
+INSERT INTO equipo VALUES (  3,  'paletas de marcador Waterpolo ', 4);
+INSERT INTO equipo VALUES (  4,  'Balon waterpolo', 5);
+INSERT INTO equipo VALUES (  5,  'Play team',    2);
+INSERT INTO equipo VALUES (  6,  'Jump start',   6);
+INSERT INTO equipo VALUES (  7,  'guantes de Box',     1);
+INSERT INTO equipo VALUES (  8,  'Porteria Balonmano', 2);
+INSERT INTO equipo VALUES (  9,  'Campana de Boxeo', 3);
+INSERT INTO equipo VALUES (  10, 'Pot de salida ciclismo M',4);
+INSERT INTO equipo VALUES (  11, 'Shot obstaculos ecuestre', 5);
+INSERT INTO equipo VALUES (  12, 'cuerdas de escalda', 1);
 INSERT INTO equipo VALUES (  13, 'Buena onda', 2);
 INSERT INTO equipo VALUES (  14, 'Cima Health & Sports Club', 3);
-INSERT INTO equipo VALUES (  15, 'La capa de los héroes', 4);
-INSERT INTO equipo VALUES (  16, 'Dragon work', 5);
-INSERT INTO equipo VALUES (  17, 'Los lobos del escuadrón', 2);
-INSERT INTO equipo VALUES (  18, 'Grupo terrícola', 4);
-INSERT INTO equipo VALUES (  19, 'Genios unidos', 3);
-INSERT INTO equipo VALUES (  20, 'Punto sin aparte', 2);
+INSERT INTO equipo VALUES (  15, 'Colchonetas de Gimnacia', 4);
+INSERT INTO equipo VALUES (  16, 'Banderilla señalizadora golf', 5);
+INSERT INTO equipo VALUES (  17, 'Pulidora de hielo', 2);
+INSERT INTO equipo VALUES (  18, 'puck de hockey', 4);
+INSERT INTO equipo VALUES (  19, 'Tripode para dia pentatlon', 3);
+INSERT INTO equipo VALUES (  20, 'Velocimetro de precicion', 2);
 COMMIT;
 
 /*==============================================================*/
@@ -162,26 +162,26 @@ COMMIT;
 idequipodeporte (varchar(3)), idEquipo(varchar(3)), iddeporte(varchar(3))                                       */
 /*==============================================================*/
 
-INSERT INTO equipodeporte VALUES (  1, 2, 3);
-INSERT INTO equipodeporte VALUES (  2, 3, 4);
-INSERT INTO equipodeporte VALUES (  3, 4, 5);
-INSERT INTO equipodeporte VALUES (  4, 5, 6);
-INSERT INTO equipodeporte VALUES (  5, 8, 10);
-INSERT INTO equipodeporte VALUES (  6, 7, 9 );
-INSERT INTO equipodeporte VALUES (  7, 8,  10 );
-INSERT INTO equipodeporte VALUES (  8, 9,  11 );
-INSERT INTO equipodeporte VALUES (  9, 10,  12);
-INSERT INTO equipodeporte VALUES (  10,11,  13);
-INSERT INTO equipodeporte VALUES (  11,12,  14);
-INSERT INTO equipodeporte VALUES (  12,13,  15);
-INSERT INTO equipodeporte VALUES (  13, 2 , 3 );
-INSERT INTO equipodeporte VALUES (  14,  8,  9 );
-INSERT INTO equipodeporte VALUES (  15, 2, 7);
-INSERT INTO equipodeporte VALUES (  16, 3, 7);
-INSERT INTO equipodeporte VALUES (  17, 5, 7);
-INSERT INTO equipodeporte VALUES (  18, 8, 7);
-INSERT INTO equipodeporte VALUES (  19, 3, 7);
-INSERT INTO equipodeporte VALUES (  20, 2, 7);
+INSERT INTO equipodeporte VALUES (  1,  2,  3);
+INSERT INTO equipodeporte VALUES (  2,  3,  4);
+INSERT INTO equipodeporte VALUES (  3,  4,  5);
+INSERT INTO equipodeporte VALUES (  4,  5,  6);
+INSERT INTO equipodeporte VALUES (  5,  8,  10);
+INSERT INTO equipodeporte VALUES (  6,  7,  9 );
+INSERT INTO equipodeporte VALUES (  7,  8,  10 );
+INSERT INTO equipodeporte VALUES (  8,  9,  11 );
+INSERT INTO equipodeporte VALUES (  9,  10, 12);
+INSERT INTO equipodeporte VALUES (  10, 11, 13);
+INSERT INTO equipodeporte VALUES (  11, 12, 14);
+INSERT INTO equipodeporte VALUES (  12, 13, 15);
+INSERT INTO equipodeporte VALUES (  13, 20,  3 );
+INSERT INTO equipodeporte VALUES (  14, 8,  9 );
+INSERT INTO equipodeporte VALUES (  15, 2,  7);
+INSERT INTO equipodeporte VALUES (  16, 3,  7);
+INSERT INTO equipodeporte VALUES (  17, 5,  20);
+INSERT INTO equipodeporte VALUES (  18, 8,  19);
+INSERT INTO equipodeporte VALUES (  19, 3,  18);
+INSERT INTO equipodeporte VALUES (  20, 2,  7);
 COMMIT;
 
 /*==============================================================*/

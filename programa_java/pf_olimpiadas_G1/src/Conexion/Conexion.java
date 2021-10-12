@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 public class Conexion {
     Connection con;
     public Connection getConnection(){
-        String url = "jdbc:postgresql://localhost:5432/Modulo_Olimpiadas_g1";
+        String url = "jdbc:postgresql://localhost:5432/pf_Olimpiadas_g1";
         String user = "postgres";
         String password = "1000709031";    
        
