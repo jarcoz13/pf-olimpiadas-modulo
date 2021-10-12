@@ -64,6 +64,11 @@ public class sede {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
-    
+
+    public void Guardar(int complejo, int unico, String NomComplejo, String Presupuesto, String Direccion) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+  
     
 }
