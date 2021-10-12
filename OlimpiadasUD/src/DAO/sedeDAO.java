@@ -34,8 +34,9 @@ public class sedeDAO {
                 s.setPresupuesto(rs.getString(4));
                 s.setDireccion(rs.getString(5));
                 datos.add(s);
-        } 
-        }   catch (Exception e) {
+                } 
+            }   
+        catch (Exception e) {
         }
         return datos;
     
