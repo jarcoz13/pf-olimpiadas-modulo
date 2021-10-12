@@ -38,16 +38,16 @@ COMMIT;
 codpersona, idtipopersona,nompersona,apepersona,userper,correoper,pasword                                           */
 /*==============================================================*/
 
-INSERT INTO persona VALUES (   1,   1, 'Jose',        'Cortazar', 'Jarcoz',   'jarcoz@punto.co',   'hermes' );
-INSERT INTO persona VALUES (   2,   1, 'Alejandro',   'Lopez' ,   'Alejus',   'alejus@punto.co',   'hermes');
-INSERT INTO persona VALUES (   3,   1, 'Jeff',        'Escobar',  'Jefesc',   'jeff@ieee.ud.co',   '12345');
-INSERT INTO persona VALUES (   4,   2, 'jefferson',   'Rivas',    'Jefferson','jefferson@ieee.com','12345');
-INSERT INTO persona VALUES (   5,   2, 'Porky',       'Duque',    'Reporqui', 'porquiporsiempre@yque.com',  'loadm');
-INSERT INTO persona VALUES (   6,   2, 'Lord',        'Petrosky', 'Petrosky', 'lordpetrosky@humana.co',     'lol');
-INSERT INTO persona VALUES (   7,   2, 'Tony',        'Stark',    'Ironman',  'ironman@justicelige.earth',  'master');
-INSERT INTO persona VALUES (   8,   2, 'Henry',        'Charrier', 'Papillon', 'papillon@ebooking.com',		'lolx2');
-INSERT INTO persona VALUES (   9,   2, 'Dann',        'Brawn',    'Landong',  'landong@ucambrige.edu.uk',	'nomam');
-INSERT INTO persona VALUES (   10,  2, 'Xavier',      'Charls',   'Profesorx','xavier@xmen.moon',			'yque');
+INSERT INTO persona VALUES (   1,   1, 'Jose',        'Cortazar', 'Jarco',   'jarcoz@punto.co',   'herme' );
+INSERT INTO persona VALUES (   2,   1, 'Alejandro',   'Lopez' ,   'Aleju',   'alejus@punto.co',   'heres');
+INSERT INTO persona VALUES (   3,   1, 'Jeff',        'Escobar',  'Jefec',   'jeff@ieee.ud.co',   '12345');
+INSERT INTO persona VALUES (   4,   2, 'jefferson',   'Rivas',    'Jefer','jefferson@ieee.com','12345');
+INSERT INTO persona VALUES (   5,   2, 'Porky',       'Duque',    'Repor', 'porquiporsiempre@yque.com',  'loadm');
+INSERT INTO persona VALUES (   6,   2, 'Lord',        'Petrosky', 'Petro', 'lordpetrosky@humana.co',     'lol');
+INSERT INTO persona VALUES (   7,   2, 'Tony',        'Stark',    'Ironm',  'ironman@justicelige.earth',  'mastr');
+INSERT INTO persona VALUES (   8,   2, 'Henry',        'Charrier', 'Papil', 'papillon@ebooking.com',		'lolx');
+INSERT INTO persona VALUES (   9,   2, 'Dann',        'Brawn',    'Lando',  'landong@ucambrige.edu.uk',	'nomam');
+INSERT INTO persona VALUES (   10,  2, 'Xavier',      'Charls',   'Profe','xavier@xmen.moon',			'yque');
 COMMIT;
 
 /*==============================================================*/
@@ -56,78 +56,77 @@ idcomplejo(char(5)),idunico(varchar(4)),
 nomcomplejo(varchar(30)), 
 presupuesto (number(7,2)), direccion(varchar(30))                                      */
 /*==============================================================*/
-INSERT INTO sede VALUES (  1,  1,   'Parque Sapporo Odori',        3000000, 'Chuo-ku,Sapporo,Hokkaido');
-INSERT INTO sede VALUES (  2,  2,   'Sport Plaza Musashino Forest', 1200000, '290-11, Nishimachi, Chofu-shi');
-INSERT INTO sede VALUES (  3,  3,   'Parque de Tenis de Ariake',    3000000, '2-22, 2chome, Ariake, Koto-ku');
-INSERT INTO sede VALUES (  4,  4,   'Estadio de Béisbol Yokohama',  3000000, 'Chuo-ku,Sapporo,Hokkaido');
-INSERT INTO sede VALUES (  5,  5,   'Centro de Waterpolo Tatsumi',  3000000, 'Chuo-ku,Sapporo,Hokkaido');
-INSERT INTO sede VALUES (  6,  6,   'Estadio de Tokio',             4500000, '376-3, Nishimachi, Chofu-shi');
-INSERT INTO sede VALUES (  7,  7,   'Gimnasio Metropolitano Tokio', 1500000,   '17-1, 1chome, Sendagaya, Shibuya-ku'   );
-INSERT INTO sede VALUES (  8,  8,   'Playa de Surf de Tsurigasaki', 100000,   '6961-1, Torami, Ichinomiya-machi'   );
-INSERT INTO sede VALUES (  9,  9,   'Saitama Super Arena', 3000000,   '8, Shintoshin, Chuo-ku, Saitama-shi'   );
-INSERT INTO sede VALUES (  10, 10,  'Sapporo Dome', 3000000,   'Chuo-ku,Sapporo,Hokkaido'   );
-INSERT INTO sede VALUES (  11, 11,  'Parque Sapporo Odori', 3000000,   'Chuo-ku,Sapporo,Hokkaido'   );
-INSERT INTO sede VALUES (  12, 12,  'Parque Sapporo Odori', 3000000,   'Chuo-ku,Sapporo,Hokkaido'   );
-INSERT INTO sede VALUES (  13, 13,  'Parque Sapporo Odori', 3000000,   'Chuo-ku,Sapporo,Hokkaido'   );
-INSERT INTO sede VALUES (  14, 14,  'Parque Sapporo Odori', 3000000,   'Chuo-ku,Sapporo,Hokkaido'   );
-INSERT INTO sede VALUES (  15, 15,  'Parque Sapporo Odori', 3000000,   'Chuo-ku,Sapporo,Hokkaido'   );
+INSERT INTO sede VALUES (  1,     'Parque Sapporo Odori',        30000, 'Chuo-ku,Sapporo,Hokkaido');
+INSERT INTO sede VALUES (  2,     'Sport Plaza Musashino Forest', 12000, '290-11, Nishimachi, Chofu-shi');
+INSERT INTO sede VALUES (  3,     'Parque de Tenis de Ariake',    30000, '2-22, 2chome, Ariake, Koto-ku');
+INSERT INTO sede VALUES (  4,     'Estadio de Béisbol Yokohama',  30000, 'Chuo-ku,Sapporo,Hokkaido');
+INSERT INTO sede VALUES (  5,     'Centro de Waterpolo Tatsumi',  30000, 'Chuo-ku,Sapporo,Hokkaido');
+INSERT INTO sede VALUES (  6,     'Estadio de Tokio',             45000, '376-3, Nishimachi, Chofu-shi');
+INSERT INTO sede VALUES (  7,     'Gimnasio Metropolitano Tokio', 15000,   '17-1, 1chome, Sendagaya'   );
+INSERT INTO sede VALUES (  8,     'Playa de Surf de Tsurigasaki', 1000,   '6961-1, Torami, Ichinomiya');
+INSERT INTO sede VALUES (  9,    'Saitama Super Arena', 30000,   '8, Shintoshin, Chuo-ku, S'   );
+INSERT INTO sede VALUES (  10,   'Sapporo Dome', 30000,   'Chuo-ku,Sapporo,Hokkaido'   );
+INSERT INTO sede VALUES (  11,   'Parque Sapporo Odori', 30000,   'Chuo-ku,Sapporo,Hokkaido'   );
+INSERT INTO sede VALUES (  12,   'Parque Sapporo Odori', 30000,   'Chuo-ku,Sapporo,Hokkaido'   );
+INSERT INTO sede VALUES (  13,   'Parque Sapporo Odori', 30000,   'Chuo-ku,Sapporo,Hokkaido'   );
+INSERT INTO sede VALUES (  14,  'Parque Sapporo Odori', 30000,   'Chuo-ku,Sapporo,Hokkaido'   );
+INSERT INTO sede VALUES (  15,   'Parque Sapporo Odori', 30000,   'Chuo-ku,Sapporo,Hokkaido'   );
 COMMIT;
 /*==============================================================*/
 /* Table: unico        
-idunico(varchar),areaUnico(number(4,2))                                   */
+idunico(varchar),idDeporte(varchar(5)),idComplejo(varchar(5)),areaUnico(number(4,2))                                 */
 /*==============================================================*/
-INSERT INTO unico VALUES (  1, 75000 );--Parque Sapporo Odori
-INSERT INTO unico VALUES (  2, 65000 );--Sport Plaza Musashino,
-INSERT INTO unico VALUES (  3, 54000 );--Parque de Tenis de Ariake
-INSERT INTO unico VALUES (  4, 65000 );--Estadio de Béisbol de Yokohama
-INSERT INTO unico VALUES (  5, 65000 );--Centro Acuático de Waterpolo de Tatsumi
-INSERT INTO unico VALUES (  6, 45000 );--6961-1, Torami, Ichinomiya-machi
-INSERT INTO unico VALUES (  7, 35000 );--Shintoshin, Chuo-ku, Saitama-shi
-INSERT INTO unico VALUES (  8, 65000 );--Sapporo Dome
---COMMIT;
+INSERT INTO unico VALUES (  1, 5, 2,75 );--Parque Sapporo Odori
+INSERT INTO unico VALUES (  2, 4, 1,65 );--Sport Plaza Musashino,
+INSERT INTO unico VALUES (  3, 3, 3,54 );--Parque de Tenis de Ariake
+INSERT INTO unico VALUES (  4, 2, 4,65 );--Estadio de Béisbol de Yokohama
+INSERT INTO unico VALUES (  5, 1, 5,65 );--Centro Acuático de Waterpolo de Tatsumi
+INSERT INTO unico VALUES (  6, 5, 2,45 );--6961-1, Torami, Ichinomiya-machi
+INSERT INTO unico VALUES (  7, 4, 3,35 );--Shintoshin, Chuo-ku, Saitama-shi
+INSERT INTO unico VALUES (  8, 2, 4,65 );--Sapporo Dome
+COMMIT;
 
 /*==============================================================*/
 /* Table: area    
-idarea (varchar(3)), nomArea(varchar(10)), ubicacion(varchar(30))                                      */
+idComplejo(varchar(5)),idarea (varchar(3)), nomArea(varchar(10)), ubicacion(varchar(30))                                      */
 /*==============================================================*/
-INSERT INTO area VALUES (  1, 'Cancha de futbol', 'grama central');--Estadio de Tokio
-INSERT INTO area VALUES (  2,'Tenis de mesa', 'area competicion juegos mesa' );--Gimnasio Metropolitano de Tokio
-INSERT INTO area VALUES (  3, 'Cancha de Tennis' , 'estadio de techo');
-INSERT INTO area VALUES (  4, 'Actividades Subacuáticas','Area piscinas olimpicas');
-INSERT INTO area VALUES (  5, 'Atletismo en pista','pista de trote 2,4 km');
-INSERT INTO area VALUES (  6, 'Pista de Baile' ,'SalonEliptico');
-INSERT INTO area VALUES (  7, 'Voley Playa','Playa de Surf de Tsurigasaki');
-INSERT INTO area VALUES (  8, 'Ciclismo en Pista');
-INSERT INTO area VALUES (  9, 'Pista de Skate');
-INSERT INTO area VALUES (  10, 'Cancha de Basquet' );
-INSERT INTO area VALUES (  11, 'Futbol Sala' );
-INSERT INTO area VALUES (  12, 'Taekwondo');
-INSERT INTO area VALUES (  13, 'Patinaje artístico');
-INSERT INTO area VALUES (  14, 'Natación Sincronizada' );
-INSERT INTO area VALUES (  15, 'Ring de Boxeo');
+INSERT INTO area VALUES (  9, 13,'C.Futbol', 'grama central');--Estadio de Tokio
+INSERT INTO area VALUES (  10, 12,'T. mesa', 'area competicion ' );--Gimnasio Metropolitano de Tokio
+INSERT INTO area VALUES (  11, 11,'C.Tenni' , 'estadio de techo');
+INSERT INTO area VALUES (  12, 10,'A.Sub','Area piscinas olimpicas');
+INSERT INTO area VALUES (  13, 9,'A.pista','pista de trote 2,4 km');
+INSERT INTO area VALUES (  14, 8,'P.Baile' ,'SalonEliptico');
+INSERT INTO area VALUES (  15, 7,'V.Playa','Playa de Surf');
+INSERT INTO area VALUES (  1, 23,'C.Pista', 'area competicion ');
+INSERT INTO area VALUES (  2, 22,'P.Skate', 'area competicion ');
+INSERT INTO area VALUES (  3,24,'C.Basquet', 'area competicion ' );
+INSERT INTO area VALUES (  4,23,'F.Sala' , 'area competicion ');
+INSERT INTO area VALUES (  5,22, 'Taekwondo', 'area competicion ');
+INSERT INTO area VALUES (  6,21, 'Patinaje', 'area competicion ');
+INSERT INTO area VALUES (  7,23, 'N.Sincro', 'area competicion ' );
+INSERT INTO area VALUES (  8,22, 'R.Boxeo', 'area competicion ');
 COMMIT;
 
 /*==============================================================*/
 /* Table: polideportivo  
-idpoli (varchar(4))                                        */
+idpoli (varchar(4)), idcomplejo (varchar(4)),idarea (varchar(4)),iddeporte varchar((4))             */
 /*==============================================================*/
-INSERT INTO polideportivo VALUES (  '1234');
-INSERT INTO polideportivo VALUES (  '2345');
-INSERT INTO polideportivo VALUES (  '3456');
-INSERT INTO polideportivo VALUES (  '4567');
-INSERT INTO polideportivo VALUES (  '5890');
-INSERT INTO polideportivo VALUES (  '6789');
-INSERT INTO polideportivo VALUES (  '7891');
-INSERT INTO polideportivo VALUES (  '8911');
-INSERT INTO polideportivo VALUES (  '9112');
-INSERT INTO polideportivo VALUES (  '0123');
-INSERT INTO polideportivo VALUES (  '1234');
-INSERT INTO polideportivo VALUES (  '2345');
-INSERT INTO polideportivo VALUES (  '3123');
-INSERT INTO polideportivo VALUES (  '7489');
-INSERT INTO polideportivo VALUES (  '5017');
+INSERT INTO polideportivo VALUES (  1, 12, 10, 9);
+INSERT INTO polideportivo VALUES (  2, 12, 10, 8);
+INSERT INTO polideportivo VALUES (  3, 12, 10, 7);
+INSERT INTO polideportivo VALUES (  4, 12, 10, 6);
+INSERT INTO polideportivo VALUES (  5, 12, 10, 5);
+INSERT INTO polideportivo VALUES (  6, 12, 10, 4);
+INSERT INTO polideportivo VALUES (  7,  12, 10, 3);
+INSERT INTO polideportivo VALUES (  8,  12, 10, 2);
+INSERT INTO polideportivo VALUES (  9,  12, 10, 1);
+INSERT INTO polideportivo VALUES (  10,  12, 10, 5);
+INSERT INTO polideportivo VALUES (  11,  12, 10, 6);
+INSERT INTO polideportivo VALUES (  12,  11, 10, 7);
+INSERT INTO polideportivo VALUES (  13, 12, 10, 1);
+INSERT INTO polideportivo VALUES (  14,  12, 10, 4);
+INSERT INTO polideportivo VALUES (  15,  12, 10, 5);
 COMMIT;
-
 
 /*==============================================================*/
 /* Table: equipos (Equipamiento)
@@ -162,26 +161,26 @@ COMMIT;
 idequipodeporte (varchar(3)), idEquipo(varchar(3)), iddeporte(varchar(3))                                       */
 /*==============================================================*/
 
-INSERT INTO equipodeporte VALUES (  1,  2,  3);
-INSERT INTO equipodeporte VALUES (  2,  3,  4);
-INSERT INTO equipodeporte VALUES (  3,  4,  5);
-INSERT INTO equipodeporte VALUES (  4,  5,  6);
-INSERT INTO equipodeporte VALUES (  5,  8,  10);
-INSERT INTO equipodeporte VALUES (  6,  7,  9 );
-INSERT INTO equipodeporte VALUES (  7,  8,  10 );
-INSERT INTO equipodeporte VALUES (  8,  9,  11 );
-INSERT INTO equipodeporte VALUES (  9,  10, 12);
-INSERT INTO equipodeporte VALUES (  10, 11, 13);
-INSERT INTO equipodeporte VALUES (  11, 12, 14);
-INSERT INTO equipodeporte VALUES (  12, 13, 15);
-INSERT INTO equipodeporte VALUES (  13, 20,  3 );
-INSERT INTO equipodeporte VALUES (  14, 8,  9 );
-INSERT INTO equipodeporte VALUES (  15, 2,  7);
-INSERT INTO equipodeporte VALUES (  16, 3,  7);
-INSERT INTO equipodeporte VALUES (  17, 5,  20);
-INSERT INTO equipodeporte VALUES (  18, 8,  19);
-INSERT INTO equipodeporte VALUES (  19, 3,  18);
-INSERT INTO equipodeporte VALUES (  20, 2,  7);
+INSERT INTO equipodeporte VALUES (  1,  2);
+INSERT INTO equipodeporte VALUES (  2,  3);
+INSERT INTO equipodeporte VALUES (  3,  4);
+INSERT INTO equipodeporte VALUES (  4,  5);
+INSERT INTO equipodeporte VALUES (  5, 10);
+INSERT INTO equipodeporte VALUES (  6,  7);
+INSERT INTO equipodeporte VALUES (  7,  8);
+INSERT INTO equipodeporte VALUES (  8,  9);
+INSERT INTO equipodeporte VALUES (  9,  10);
+INSERT INTO equipodeporte VALUES (  10, 11);
+INSERT INTO equipodeporte VALUES (  11, 12);
+INSERT INTO equipodeporte VALUES (  12, 13);
+INSERT INTO equipodeporte VALUES (  13, 20);
+INSERT INTO equipodeporte VALUES (  14, 8);
+INSERT INTO equipodeporte VALUES (  15, 2);
+INSERT INTO equipodeporte VALUES (  16, 3);
+INSERT INTO equipodeporte VALUES (  17, 5);
+INSERT INTO equipodeporte VALUES (  18, 8);
+INSERT INTO equipodeporte VALUES (  19, 3);
+INSERT INTO equipodeporte VALUES (  20, 2);
 COMMIT;
 
 /*==============================================================*/
