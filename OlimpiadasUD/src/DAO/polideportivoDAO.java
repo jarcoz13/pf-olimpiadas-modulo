@@ -3,34 +3,34 @@ package DAO;
 
 import java.sql.Connection;
 import Modelo.Conexion;
-import Modelo.area;
+import Modelo.polideportivo;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class areaDAO {
+public class polideportivoDAO {
     Conexion conectar = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
     
     public List Listar(){
-        List <area>datos =new ArrayList<>();
+        List <polideportivo>datos =new ArrayList<>();
         // sentencia sql tabla Equipo
-        String sql="Select * from area";
+        String sql="Select * from polideportivo";
         
         try {
             con=conectar.getConnection();
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
             while (rs.next()) {
-                area a = new area();
-                a.setIdcomplejo(rs.getInt(1));
-                a.setIdarea(rs.getInt(2));
-                a.setNomarea(rs.getString(3));
-                a.setUbicacion(rs.getString(4));
-                datos.add(a);
+                polideportivo p = new polideportivo();
+                p.setIdpoli(rs.getInt(1));
+                p.setIdcomplejo(rs.getInt(2));
+                p.setIdarea(rs.getInt(3));
+                p.setIddeporte(rs.getInt(4));
+                datos.add(p);
                 
             }
         }
@@ -39,10 +39,10 @@ public class areaDAO {
         }
         return datos;
     }
-        public void Guardar (int idcomplejo, int idarea, String nomarea, String ubicacion){
+        public void Guardar (int idpoli, int idcomplejo, int idarea, int iddeporte){
             try {
-                String postgresql = "INSERT INTO unico(idcomplejo, idarea, nomarea,ubicacion) "
-                        + "values('" + idcomplejo + "','" + idarea + "' ,'" + nomarea+"' ,'" +ubicacion+ "')";
+                String postgresql = "INSERT INTO unico(idpoli, idcomplejo, idarea, iddeporte) "
+                        + "values('" + idpoli + "','" + idcomplejo + "' ,'" + idarea +"' ,'" + iddeporte+ "')";
 
                 con=conectar.getConnection();
                 ps=con.prepareStatement(postgresql);

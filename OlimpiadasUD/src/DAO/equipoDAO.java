@@ -18,7 +18,7 @@ public class equipoDAO {
     public List Listar(){
         List <equipo>datos =new ArrayList<>();
         // sentencia sql tabla Equipo
-        String sql="Select * from Equipo";
+        String sql="Select * from equipo";
         
         try {
             con=conectar.getConnection();
@@ -40,7 +40,7 @@ public class equipoDAO {
     }
         public void Guardar (String idequipo, String nomequipo, int npartes){
             try {
-                String postgresql = "INSERT INTO Equipo(idEquipo, nomEquipo, npares) "
+                String postgresql = "INSERT INTO equipo(idequipo, nomEquipo, npares) "
                         + "values('" + idequipo + "','" + nomequipo + "' ,'" + npartes+ "')";
 
                 con=conectar.getConnection();

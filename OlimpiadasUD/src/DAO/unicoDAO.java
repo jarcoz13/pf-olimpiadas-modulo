@@ -41,7 +41,7 @@ public class unicoDAO {
     }
         public void Guardar (int idunico, int iddeporte, int idcomplejo, int areaunico){
             try {
-                String postgresql = "INSERT INTO unico(iduquipo, iddeporte, idcomplejo, npares) "
+                String postgresql = "INSERT INTO unico(idunico, iddeporte, idcomplejo, areaunico) "
                         + "values('" + idunico + "','" + iddeporte + "' ,'" + idcomplejo +"' ,'" + areaunico+ "')";
 
                 con=conectar.getConnection();

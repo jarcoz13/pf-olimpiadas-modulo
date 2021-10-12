@@ -3,34 +3,33 @@ package DAO;
 
 import java.sql.Connection;
 import Modelo.Conexion;
-import Modelo.area;
+import Modelo.Tipopersona;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class areaDAO {
+public class tipopersonaDAO {
     Conexion conectar = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
     
     public List Listar(){
-        List <area>datos =new ArrayList<>();
+        List <Tipopersona>datos =new ArrayList<>();
         // sentencia sql tabla Equipo
-        String sql="Select * from area";
+        String sql="Select * from Tipopersona";
         
         try {
             con=conectar.getConnection();
             ps=con.prepareStatement(sql);
             rs=ps.executeQuery();
             while (rs.next()) {
-                area a = new area();
-                a.setIdcomplejo(rs.getInt(1));
-                a.setIdarea(rs.getInt(2));
-                a.setNomarea(rs.getString(3));
-                a.setUbicacion(rs.getString(4));
-                datos.add(a);
+                Tipopersona tp = new Tipopersona();
+                tp.setIdtipopersona(rs.getInt(1));
+                tp.setDesctipoperso(rs.getString(2));
+               
+                datos.add(tp);
                 
             }
         }
@@ -39,10 +38,10 @@ public class areaDAO {
         }
         return datos;
     }
-        public void Guardar (int idcomplejo, int idarea, String nomarea, String ubicacion){
+        public void Guardar (int idunico, int iddeporte, int idcomplejo, int areaunico){
             try {
-                String postgresql = "INSERT INTO unico(idcomplejo, idarea, nomarea,ubicacion) "
-                        + "values('" + idcomplejo + "','" + idarea + "' ,'" + nomarea+"' ,'" +ubicacion+ "')";
+                String postgresql = "INSERT INTO unico(iduquipo, iddeporte, idcomplejo, npares) "
+                        + "values('" + idunico + "','" + iddeporte + "' ,'" + idcomplejo +"' ,'" + areaunico+ "')";
 
                 con=conectar.getConnection();
                 ps=con.prepareStatement(postgresql);
