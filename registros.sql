@@ -9,20 +9,20 @@ INSERT INTO deporte VALUES (   3,  'Baloncesto',   10);
 INSERT INTO deporte VALUES (   4,  'Esgrima',      4);
 INSERT INTO deporte VALUES (   5,  'Waterpolo',    20);
 INSERT INTO deporte VALUES (   6,  'Baloncesto',   30);
-INSERT INTO deporte VALUES (   7,  'Balonmano',    6);
-INSERT INTO deporte VALUES (   8,  'Boxeo',        10);
-INSERT INTO deporte VALUES (   9,  'Ciclismo de montaña',    4);
-INSERT INTO deporte VALUES (   10, 'Ecuestre',     20);
-INSERT INTO deporte VALUES (   11, 'Escalada',     30);
-INSERT INTO deporte VALUES (   12, 'Ciclismo de Ruta',     6);
-INSERT INTO deporte VALUES (   13, 'Football Americano',       10);
-INSERT INTO deporte VALUES (   14, 'Gimnasia Artística',    4);
-INSERT INTO deporte VALUES (   15, 'Golf',         20);
-INSERT INTO deporte VALUES (   16, 'Hockey',       30);
-INSERT INTO deporte VALUES (   17, 'NataciÓn',     6);
+INSERT INTO deporte VALUES (   7,  'Balonmano',    			6);
+INSERT INTO deporte VALUES (   8,  'Boxeo',        			10);
+INSERT INTO deporte VALUES (   9,  'Ciclismo de montaña',   4);
+INSERT INTO deporte VALUES (   10, 'Ecuestre',     			20);
+INSERT INTO deporte VALUES (   11, 'Escalada',     			30);
+INSERT INTO deporte VALUES (   12, 'Ciclismo de Ruta',     	6);
+INSERT INTO deporte VALUES (   13, 'Football Americano',   	10);
+INSERT INTO deporte VALUES (   14, 'Gimnasia Artística',   	4);
+INSERT INTO deporte VALUES (   15, 'Golf',         			20);
+INSERT INTO deporte VALUES (   16, 'Hockey',       			30);
+INSERT INTO deporte VALUES (   17, 'NataciÓn',     			6);
 INSERT INTO deporte VALUES (   18, 'Natación en aguas abiertas', 10);
-INSERT INTO deporte VALUES (   19, 'Pentatlon',    4);
-INSERT INTO deporte VALUES (   20, 'Remo',         20);
+INSERT INTO deporte VALUES (   19, 'Pentatlon',    			4);
+INSERT INTO deporte VALUES (   20, 'Remo',         			20);
 COMMIT;
 
 /*==============================================================*/
@@ -42,12 +42,12 @@ INSERT INTO persona VALUES (   1,   1, 'Jose',        'Cortazar', 'Jarcoz',   'j
 INSERT INTO persona VALUES (   2,   1, 'Alejandro',   'Lopez' ,   'Alejus',   'alejus@punto.co',   'hermes');
 INSERT INTO persona VALUES (   3,   1, 'Jeff',        'Escobar',  'Jefesc',   'jeff@ieee.ud.co',   '12345');
 INSERT INTO persona VALUES (   4,   2, 'jefferson',   'Rivas',    'Jefferson','jefferson@ieee.com','12345');
-INSERT INTO persona VALUES (   5,   2, 'Porky',       'Duque',    'Reporqui', 'porquiporsiempre@yque.com',  'loadmito');
+INSERT INTO persona VALUES (   5,   2, 'Porky',       'Duque',    'Reporqui', 'porquiporsiempre@yque.com',  'loadm');
 INSERT INTO persona VALUES (   6,   2, 'Lord',        'Petrosky', 'Petrosky', 'lordpetrosky@humana.co',     'lol');
 INSERT INTO persona VALUES (   7,   2, 'Tony',        'Stark',    'Ironman',  'ironman@justicelige.earth',  'master');
-INSERT INTO persona VALUES (   8,   2, 'Henry',        'Charrier', 'Papillon', 'papillon@ebooking.com');
-INSERT INTO persona VALUES (   9,   2, 'Dann',        'Brawn',    'Landong',  'landong@ucambrige.edu.uk');
-INSERT INTO persona VALUES (   10,  2, 'Xavier',      'Charls',   'Profesorx','xavier@xmen.moon');
+INSERT INTO persona VALUES (   8,   2, 'Henry',        'Charrier', 'Papillon', 'papillon@ebooking.com',		'lolx2');
+INSERT INTO persona VALUES (   9,   2, 'Dann',        'Brawn',    'Landong',  'landong@ucambrige.edu.uk',	'nomam');
+INSERT INTO persona VALUES (   10,  2, 'Xavier',      'Charls',   'Profesorx','xavier@xmen.moon',			'yque');
 COMMIT;
 
 /*==============================================================*/
